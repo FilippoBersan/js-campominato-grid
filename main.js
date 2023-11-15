@@ -20,6 +20,13 @@ function myCreateElement(tag, ClassName, content) {
   return element;
 }
 
+function changeColor(tag, ClassName, content) {
+  const element = document.createElement(tag);
+  element.classList.add(ClassName);
+  element.append(content);
+  return element;
+}
+
 const board = document.querySelector('.board');
 console.log(board);
 
@@ -30,10 +37,3 @@ for (let i = 1; i < 101; i++) {
 
 const inputButton = document.querySelector('.btn-play');
 console.log(inputButton);
-
-inputButton.addEventListener('click', function () {
-  console.log(inputButton, ' hai cliccato su play');
-  if (inputButton !== null) {
-    board.classList.add('active');
-  }
-});

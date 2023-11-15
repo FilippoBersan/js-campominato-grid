@@ -25,7 +25,12 @@ header {
 
 .container-h1 {
   display: flex;
+  gap: 1.25rem;
   align-self: center;
+}
+h1 {
+  position: relative;
+  top: 0.3125rem;
 }
 
 .btn-play {
@@ -56,6 +61,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   border: 1px solid black;
 }
@@ -67,5 +73,6 @@ footer {
 .infoplay {
   text-align: center;
 }
-.remove {
+.onclick {
+  background-color: deeppink;
 }
